@@ -42,7 +42,7 @@
          ) {
            xhr.setRequestHeader('Authorization',options.auth == 'oauth'
              ? 'token '+ options.token
-             : 'Basic ' + Base64.encode(options.username + ':' + options.password)
+             : 'Basic ' + btoa(options.username + ':' + options.password)
            );
          }
       data ? xhr.send(JSON.stringify(data)) : xhr.send();
