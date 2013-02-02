@@ -10,7 +10,7 @@ Create a Github instance.
 var github = new Github({
   username: "YOU_USER",
   password: "YOUR_PASSWORD",
-  auth: "basic"
+  auth: "Basic"
 });
 ```
 
